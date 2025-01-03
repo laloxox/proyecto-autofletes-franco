@@ -2,7 +2,7 @@
 
 ---
 
-<div x-data="{ open: false }" class="bg-gray-800">
+<div x-data="{ open: false }" class="back-img">
     <section class="mx-auto max-w-screen-xl pb-8 px-4 p-9 h-[660px] items-center lg:flex md:px-9">
         <div class="space-y-4 flex-1 sm:text-center lg:text-left">
             <h1 class="text-white font-bold text-4xl xl:text-5xl">
@@ -49,3 +49,18 @@
         </div>
     </section>
 </div>
+
+<style>
+    .back-img { 
+        background-image: linear-gradient(
+        to right,
+        rgba(83, 54, 95, 0.527),
+        rgba(28, 11, 75, 0.5),
+        rgba(99, 49, 146, 0.747)
+        ), url("/carretera-x2.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+</style>
