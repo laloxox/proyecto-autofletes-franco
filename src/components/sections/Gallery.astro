@@ -4,7 +4,7 @@
             <div class="flex items-center gap-12">
                 <h2 class="text-3xl font-bold lg:text-3xl text-gray-800 dark:text-slate-100 transition">Galeria</h2>
 
-                <p class="hidden text-2xl max-w-screen-sm text-indigo-400 md:block">
+                <p class="hidden text-2xl max-w-screen-sm text-indigo-400 md:block fade-in opacity-0 transform translate-y-10 transition-all duration-700">
                     Nuestras unidades cuentan con sistema de geolocalización en tiempo real.
                 </p>
             </div>
@@ -92,6 +92,26 @@
     </div>
 </div>
 
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const revealContainers = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                }
+            });
+            }, {
+                threshold: 0.1
+            });
+            revealContainers.forEach(container => {
+                observer.observe(container);
+            });
+        });
+</script>
 
 <style>
 
