@@ -1,6 +1,6 @@
 
 # Sitio Web de Autofletes Franco S.A de C.V
-![Logo](/public/LOGO-AUTOFLETES.PNG.png)
+![Logo](/public/LOGO-AUTOFLETES.PNG)
 
 A brief description of what this project does and who it's for
 
@@ -29,5 +29,5 @@ A brief description of what this project does and who it's for
 I'm a Freelance Developer
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](/public/1.png)
 
